@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Contribution Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px;
+        }
+        .photo-frame {
+            width: 50%;
+            height: 400px;
+            overflow: hidden;
+            border: 4rem solid #333;
+            position: relative;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100%); }
+        }
+        .details {
+            width: 50%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Contribution</h1>
+    <div class="container">
+        <div class="photo-frame">
+            <img src="event-photo1.jpg" alt="Event Photo 1">
+            <img src="event-photo2.jpg" alt="Event Photo 2">
+            <img src="event-photo3.jpg" alt="Event Photo 3">
+        </div>
+        <div class="details">
+            <h2>Event Details</h2>
+            <p>Date: January 1, 2023</p>
+            <p>Location: Event Venue</p>
+            <p>Description: Join us for an exciting event!</p>
+        </div>
+    </div>
+</body>
+</html>
